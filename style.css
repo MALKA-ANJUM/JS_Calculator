@@ -18,12 +18,11 @@
 .calculator{
     display: grid;
     grid-template-columns: repeat(4, 75px);
-    background: transparent;
     border-radius: 5px;
     height: 50vh;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
-                2px 2px 15px rgba(255, 255, 255, 0.5),
-            inset 0 0 5px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), inset 0 0 5px rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
 }
 input{
     grid-column: span 4;
@@ -32,14 +31,10 @@ input{
     padding: 0.5em;
     color: #fff;
     font-size: 2em;
-  
 } 
-
 button{
     background: transparent;
     border: none;
     color: #fff;
-    font-size: 1em;
-  
-   
+    font-size: 1em; 
 }
